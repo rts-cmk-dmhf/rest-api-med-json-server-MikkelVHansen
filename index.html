@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Database</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Mad Database</h1>
+    
+    <div class="add-data">
+        <h2>Add Data</h2>
+        <form id="data-form">
+          <label for="name">Mad nave:</label>
+          <input type="text" id="name" required />
+          <label for="weight">Vægt:</label>
+          <input type="text" id="weight" required />
+          <label for="amount">Antal:</label>
+          <input type="text" id="amount" required />
+          <button type="submit">Tilføj Data</button>
+        </form>
+      </div>
+
+      <div class="search-data">
+        <h2>Search Data</h2>
+        <input type="text" id="search-bar" placeholder="Search..." />
+        <ul id="results"></ul>
+      </div>
+</body>
+</html>
