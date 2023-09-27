@@ -38,5 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
         const weight = weightInput.value;
         const amount = amountInput.value;
 
+        if (name && weight && amount) {
+            const newItem = { name, weight, amount };
+            database.push(newItem);
+
+            // Update db.json with the new data
+            fetch('db.json', {
+                method: 'PUT',
+                body: JSON.stringify(database),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
 
 });
