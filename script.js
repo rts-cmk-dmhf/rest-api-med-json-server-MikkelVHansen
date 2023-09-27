@@ -16,11 +16,19 @@ document.addEventListener('DOMContentLoaded', function () {
             item.weight.toLowerCase().includes(query.toLowerCase()),
             item.amount.toLowerCase().includes(query.toLowerCase())
         );
-        
+
         filteredData.forEach(item => {
             const listItem = document.createElement('li');
             listItem.textContent = `Name: ${item.name}, Weight: ${item.weight}, Amount: ${item.amount}`;
             resultsList.appendChild(listItem);
         });
     }
+    // Load dataen fra db.json
+    fetch('db.json')
+    .then(response => response.json())
+    .then(data => {
+        database = data;
+        updateResults('');
+    });
+
 });
