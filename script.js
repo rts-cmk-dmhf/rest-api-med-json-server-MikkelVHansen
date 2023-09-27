@@ -58,4 +58,10 @@ document.addEventListener('DOMContentLoaded', function () {
             updateResults('');
         }
     });
+
+    // Søgebar input
+    searchInput.addEventListener('input', function () {
+        const query = searchInput.value;
+        updateResults(query);
+    });
 });
