@@ -17,3 +17,12 @@ h1 {
     border: 1px solid #333;
     background-color: #f9f9f9;
 }
+
+label, input {
+    margin: 10px;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
