@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
         resultsList.innerHTML = '';
 
         const filteredData = database.filter(item =>
-            item.name.toLowerCase().includes(query.toLowerCase()),
-            item.weight.toLowerCase().includes(query.toLowerCase()),
+            item.name.toLowerCase().includes(query.toLowerCase()) ||
+            item.weight.toLowerCase().includes(query.toLowerCase()) ||
             item.amount.toLowerCase().includes(query.toLowerCase())
         );
 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Søgebar input
+    // Søgebar
     searchInput.addEventListener('input', function () {
         const query = searchInput.value;
         updateResults(query);
