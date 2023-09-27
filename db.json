@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Æble",
+        "weight": "100g",
+        "amount": "1"
+    },
+    {
+        "name": "æg",
+        "weight": "600g",
+        "amount": "10"
+    },
+    {
+        "name": "grillpølse",
+        "weight": "140g",
+        "amount": "2"
+    }
+]
