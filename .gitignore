@@ -1,0 +1,13 @@
+.env
+dist/
+node_modules/
+
+
+*.log
+!example.log
+
+.tmp
+
+.vscode/settings.json
+package.json
+package-lock.json
