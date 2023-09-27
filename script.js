@@ -31,4 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
         updateResults('');
     });
 
+    dataForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const name = nameInput.value;
+        const weight = weightInput.value;
+        const amount = amountInput.value;
+
+
 });
