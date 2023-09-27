@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const newItem = { name, weight, amount };
             database.push(newItem);
 
-            // Update db.json with the new data
+            // Update db med ny data
             fetch('db.json', {
                 method: 'PUT',
                 body: JSON.stringify(database),
@@ -51,5 +51,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
             });
 
-
+            // Ryd formen og updater resultatet
+            nameInput.value = '';
+            weightInput.value = '';
+            amountInput.value = '';
+            updateResults('');
+        }
+    });
 });
